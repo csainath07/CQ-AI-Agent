@@ -1,0 +1,8 @@
+{
+  "name": "CQ-AI-Agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/csainath07/CQ-AI-Agent.git",
+  "author": "sainath <iamsainath07@gmail.com>",
+  "license": "MIT"
+}
