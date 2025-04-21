@@ -10,11 +10,11 @@ export function saveReview(dev, review) {
 
   if (!data[dev]) data[dev] = [];
 
-  data[dev].push(review);
+  data[dev].unshift(review);
 
   // Keep only the last 10 reviews
   if (data[dev].length > 10) {
-    data[dev] = data[dev].slice(-10);
+    data[dev].pop();
   }
 
   fs.writeFileSync(filePath, JSON.stringify(data, null, 2));
